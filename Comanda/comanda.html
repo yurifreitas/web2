@@ -78,25 +78,27 @@
 	</tr>
 	<tr> 
 		<th>  Total </th> 
-		<td colspan="2"> <input type="text" name="resultado">  </td> 
+		<td colspan="2"> <input type="text" name="resultado"> <button onclick="Total();">Total</button> </td> 
 	</tr>
 </table>
 </div>
 <br>
 </div>
 <input type="hidden" value="1" name="id">
-<button onclick="Total();">Total</button>
 
 
-<button onclick="listar()"> Listar </button>
-<br>
+
+
+
 
 	
 <form>
-<label>Nome Cliente:</label><input type="text" required="required" minlength="3" name="nome" id="nome"><br>
-<label>Sobrenome:</label><input type="text" required="required" name="sobrenome" id="sobrenome"><br>
+<label>Nome Cliente:</label><br><input type="text" required="required" minlength="3" name="nome" id="nome"><br>
+<label>Sobrenome:</label><br><input type="text" required="required" name="sobrenome" id="sobrenome"><br>
+<br>
 <button onclick="adiciona()">Adicionar </button>
 <button onclick="Salvar();">Salvar</button>
+<button onclick="listar()"> Listar </button>
 </form>
 </div>
 </body>
