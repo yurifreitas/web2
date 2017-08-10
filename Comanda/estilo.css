@@ -1,0 +1,24 @@
+table {
+
+
+}
+
+table, tr, td { 
+padding: 10px 10px;
+border: solid black 2px;
+
+
+}
+table, tr, th { 
+padding: 10px 10px;
+border: solid black 2px;
+
+}
+th{
+background-color: black;
+color: white;	
+}
+
+.comanda{
+	display: grid;
+}
