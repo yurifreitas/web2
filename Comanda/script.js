@@ -14,7 +14,7 @@ function inicializa(){
 
 
 function validaNome(nome){
-	if (nome.length < 2){
+	if (nome.length > 3){
 		alert("Tem que ser maior...");
 	} 
 	
@@ -64,13 +64,7 @@ function adiciona(){
 
 
 	var nome = document.getElementById("nome").value;
-			function validaNome(nome){
-	if (nome.length < 3){
-		alert("Tem que ser maior...");
-	} 
-	
-	
-}
+	validar(nome);
 	var sobrenome = document.getElementById("sobrenome").value;
 	// crio um novo objeto de Pessoa
 	var id = vet.length + 1;
@@ -82,30 +76,9 @@ function adiciona(){
 	alert("Adicionou...");
 }
 
-function soma(nro1, nro2){
- 	var soma = nro1 + nro2;
- 	alert(soma);	
- }
-
-function somaDiferente(){
-	var nro1 = parseInt(prompt("Digite:"));
-	var nro2 = parseInt(prompt("Digite:"));
-	alert(nro1+nro2);
-}
-
-function curtiu(){
-	alert("curtiu?");
-}
-
-function bemvindo(){
-	alert("Bemvindo");
-}
 
 function Total(){
-	alert("Gerando Total");
-
-	}
-function Salvar(){
-	
+	alert(
+	document.getElementById("nome").value + " \n"+ document.getElementById("sobrenome").value);
 
 	}

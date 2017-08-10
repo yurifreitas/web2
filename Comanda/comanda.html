@@ -17,12 +17,13 @@
 
 
 <div class="container">
-<div class="comanda">
 
 
 
 
-<div class="row">
+
+
+<div class="comanda">	
 
 <table>
 	<tr>
@@ -82,25 +83,20 @@
 	</tr>
 </table>
 </div>
+
 <br>
-</div>
 <input type="hidden" value="1" name="id">
-
-
-
-
-
-
 	
-<form>
-<label>Nome Cliente:</label><br><input type="text" required="required" minlength="3" name="nome" id="nome"><br>
-<label>Sobrenome:</label><br><input type="text" required="required" name="sobrenome" id="sobrenome"><br>
+<form name="teste" method="post" action="#" >
+<label>Nome Cliente:</label><br><input type="text" required  pattern="[A-Za-z]{3,}" name="nome" id="nome"><br>
+<label>Sobrenome:</label><br><input type="text" required  name="sobrenome" id="sobrenome"><br>
 <br>
-<button onclick="adiciona()">Adicionar </button>
-<button onclick="Salvar();">Salvar</button>
-<button onclick="listar()"> Listar </button>
+<button onclick="adiciona()">Salvar</button>
+
 </form>
+<button onclick="listar()">Listar</button>
 </div>
+
 </body>
 
 </html>
