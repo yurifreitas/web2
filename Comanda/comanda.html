@@ -12,17 +12,18 @@
 	</head>
 <body onload="inicializa()">
 
-
+ 
 
 
 
 <div class="container">
+<h1>Lista de Comandas</h1>
+<br>
+<div id="divResultado" > </div> 
 
 
 
-
-
-
+<br>
 <div class="comanda">	
 
 <table>
@@ -37,63 +38,62 @@
 		<th align="center"> Preço </th> 
 	</tr>
 	<tr> 
-		<td> X-Salada</td> 
-		<td> <input type="text" name="quant">  </td> 
-		<td> <input type="text" name="valorproduto"> </td> 
+		<td> <input type="checkbox" name="valorproduto" value="12"> X-Salada</td> 
+		<td> <input type="text" name="quant" id="qtd" >  </td> 
+		<td>R$ 12,00 </td> 
 	</tr>
 	<tr> 
-		<td> X-Frango </td> 
-		<td> <input type="text" name="quant"> </td> 
-		<td><input type="text" name="valorproduto"> </td> 
+		<td><input type="checkbox" name="valorproduto" value="14"> X-Frango </td> 
+		<td> <input type="text" name="quant" id="qtd"  > </td> 
+		<td>R$ 14,00 </td> 
 	</tr>
 	<tr> 
-		<td> X-Calabresa </td> 
-		<td> <input type="text" name="quant"> </td> 
-		<td><input type="text" name="valorproduto"> </td> 
+		<td><input type="checkbox" name="valorproduto" value="14"> X-Calabresa </td> 
+		<td> <input type="text" name="quant" id="qtd"  > </td> 
+		<td>R$ 14,00 </td> 
 	</tr>
 	<tr> 
-		<td> Porções Batatas </td> 
-		<td> <input type="text" name="quant"> </td> 
-		<td> <input type="text" name="valorproduto"></td> 
+		<td><input type="checkbox" name="valorproduto" value="15"> Porções Batatas </td> 
+		<td> <input type="text" name="quant" id="qtd"  > </td> 
+		<td>R$ 15,00 </td> 
 	</tr>
 	<tr> 
-		<td> Porções Cortes Suinos </td> 
-		<td> <input type="text" name="quant"> </td> 
-		<td> <input type="text" name="valorproduto"></td> 
+		<td><input type="checkbox" name="valorproduto" value="25"> Porções Cortes Suinos </td> 
+		<td> <input type="text" name="quant" id="qtd"  > </td> 
+		<td>R$ 25,00 </td> 
 	</tr>
 
 	<tr> 
-		<td> Água </td> 
-		<td> <input type="text" name="quant"> </td> 
-		<td><input type="text" name="valorproduto"> </td> 
+		<td><input type="checkbox" name="valorproduto" value="1">  Água </td> 
+		<td> <input type="text" name="quant" id="qtd"  > </td> 
+		<td>R$ 1,00</td> 
 	</tr>
 	<tr> 
-		<td> Coca-cola </td> 
-		<td> <input type="text" name="quant"> </td> 
-		<td> <input type="text" name="valorproduto"></td> 
+		<td><input type="checkbox" name="valorproduto" value="2"> Coca-cola </td> 
+		<td> <input type="text" name="quant" id="qtd"  > </td> 
+		<td>R$ 2,00 </td> 
 	</tr>
 	<tr> 
-		<td> Cerveja </td> 
-		<td> <input type="text" name="quant"> </td> 
-		<td><input type="text" name="valorproduto"> </td> 
+		<td><input type="checkbox" name="valorproduto" value="4">  Cerveja </td> 
+		<td> <input type="text" name="quant" id="qtd" > </td> 
+		<td>R$ 4,00</td> 
 	</tr>
 	<tr> 
-		<th>  Total </th> 
-		<td colspan="2"> <input type="text" name="resultado"> <button onclick="Total();">Total</button> </td> 
+		<th> <button onclick="Total()">Total</button>  Total: </th> 
+		<td colspan="2"> <div id="resultado" > </div> </td> 
 	</tr>
+	
 </table>
 </div>
 
 <br>
-<input type="hidden" value="1" name="id">
-	
-<form name="teste" method="post" action="#" >
+
+
 <label>Nome Cliente:</label><br><input type="text" required  pattern="[A-Za-z]{3,}" name="nome" id="nome"><br>
 <label>Sobrenome:</label><br><input type="text" required  name="sobrenome" id="sobrenome"><br>
 <br>
 <button onclick="adiciona()">Salvar</button>
 
-</form>
 <button onclick="listar()">Listar</button>
 </div>
 
