@@ -60,7 +60,7 @@ function listar(){
 	var vet = JSON.parse(localStorage.getItem("vet"));
 	for (var i = 0; i < vet.length; i++){
 		var g = vet[i];
-		document.getElementById("divResultado").innerHTML+=  "Id da Comanda: "+ g.id + "<br> Nome: "+ g.nome + "<br> Sobrenome: "+g.sobrenome+  "<br> Valor total: R$ "+g.valorFinal+"<br><button onclick=excluir("+g.id+")>Excluir</button> "+"<button onclick=editar("+g.id+")>Editar</button> <br>";
+		document.getElementById("divResultado").innerHTML+= "Id da Comanda: "+ g.id + "<br> Nome: "+ g.nome + "<br> Sobrenome: "+g.sobrenome+  "<br> Valor total: R$ "+g.valorFinal+"<br><button onclick=excluir("+g.id+")>Excluir</button> "+"<button onclick=editar("+g.id+")>Editar</button> <br>";
 		}
 		alert("Listou com sucesso");
 	
@@ -106,7 +106,7 @@ function Total(){
 	var nome = document.getElementById("nome").value;
 	var sobrenome = document.getElementById("sobrenome").value;
 	document.getElementById("resultado").innerHTML= "R$ "+ valorFinal;
-	alert("Cliente : "+ nome  + " \nSobrenome:" + sobrenome + "\nValor da Conta : R$" + valorFinal);
+	//alert("Cliente : "+ nome  + " \nSobrenome:" + sobrenome + "\nValor da Conta : R$" + valorFinal);
 	
 
 	
