@@ -1,6 +1,6 @@
 // apaga 
 // somente debug
-localStorage.clear();
+//localStorage.clear();
 
 var vet = [];
 
@@ -16,12 +16,14 @@ function inicializa(){
 function validaNome(nome,sobrenome){
 	if (nome.length < 3){
 		alert("O nome tem que ter mais do que 3 letras");
-		
+		return false;
 	} 
-	if (sobrenome.length == 0){
+	if (sobrenome.length < 1){
 		alert("O sobrenome não pode estar vazio");
+		return false;
 		
-	} 
+	} else {
+	return true;}
 	
 	
 }
@@ -72,7 +74,8 @@ function listar(){
 function adiciona(){
 	var nome = document.getElementById("nome").value;
 	var sobrenome = document.getElementById("sobrenome").value;
-	validaNome(nome,sobrenome);
+
+	if(validaNome(nome,sobrenome) == true){
 	// crio um novo objeto de Cliente
 	//debugger;
 	
@@ -83,6 +86,10 @@ function adiciona(){
 	// atualizo o vetor no localStorage
 	localStorage.setItem("vet", JSON.stringify(vet));
 	alert("Adicionou...");
+	}else{
+		alert("dados invalidos");
+	}
+	
 }
 
 
