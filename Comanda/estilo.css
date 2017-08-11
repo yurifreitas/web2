@@ -22,3 +22,11 @@ color: white;
 .comanda{
 	display: grid;
 }
+button{
+	padding: 15px;
+	border-radius: 5px;
+}
+button:hover{
+	background-color: white;
+}
+

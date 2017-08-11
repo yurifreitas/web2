@@ -17,6 +17,17 @@
 
 
 <div class="container">
+
+	
+<form>
+<div class="form-group ">
+<label>Nome Cliente:</label><br><input type="text" required  pattern="[A-Za-z]{3,}" name="nome" id="nome"><br>
+<label>Sobrenome:</label><br><input type="text" required  name="sobrenome" id="sobrenome"><br>
+<br>
+</div>
+
+</form>
+
 <h1>Lista de Comandas</h1>
 <br>
 <div id="divResultado" > </div> 
@@ -79,8 +90,16 @@
 		<td>R$ 4,00</td> 
 	</tr>
 	<tr> 
-		<th> <button onclick="Total()">Total</button>  Total: </th> 
+		<th>   Total: </th> 
 		<td colspan="2"> <div id="resultado" > </div> </td> 
+	</tr>
+	<tr>
+	<td colspan="3" align="center">
+	<button onclick="Total()">Total</button>
+
+	<button onclick="adiciona()">Salvar</button>
+
+	<button onclick="listar()">Listar</button></td> 
 	</tr>
 	
 </table>
@@ -89,12 +108,8 @@
 <br>
 
 
-<label>Nome Cliente:</label><br><input type="text" required  pattern="[A-Za-z]{3,}" name="nome" id="nome"><br>
-<label>Sobrenome:</label><br><input type="text" required  name="sobrenome" id="sobrenome"><br>
-<br>
-<button onclick="adiciona()">Salvar</button>
 
-<button onclick="listar()">Listar</button>
+<br>
 </div>
 
 </body>
