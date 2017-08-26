@@ -8,9 +8,9 @@
                             time.setNome(request.getParameter("nome"));
                             boolean resultado = new TMDAO().alterarTime(time);
                             if (resultado) {
-                            %>    
+                               
                             response.sendRedirect("./time.jsp");           
-                            <% } else { %>    
+                            } else { %>    
                             <h1> Xabum!! </h1>
                             <% } %> 
                             

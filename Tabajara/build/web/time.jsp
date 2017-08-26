@@ -5,12 +5,14 @@
 <div class="container">
     <div class="Time">
         <form action="./adiciona.jsp" method="post">
-              Nome do Time: <input type="text" name=nome> 
+            <label> Nome do Time:</label>
+                            <input type="text" class="form-control" name="nome" > 
                         <br>    
                         
-                  <input type="submit" value="Adicionar"> 
-            
+                  <input type="submit"  class="btn btn-primary btn-block" value="Adicionar"> 
+          
         </form>
+        <div class="container">
              <h3>Lista de Times</h3>
             <br>
             <table class="table-responsive" border="1">
@@ -44,9 +46,10 @@
 
                 <% }%>
             </table>
-        
+            
+     
        
-
+</div>
     </div>
 </div>
 <%@include file="./footer.jsp" %>

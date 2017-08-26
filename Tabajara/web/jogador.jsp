@@ -5,19 +5,21 @@
 
 <div class="container">
     <div class="jogador">
+        <div class="container">
         <form action="./adicionajogador.jsp" method="post">
-                        Nome: <input type="text" name="nome"> 
+                        Nome: <input type="text" class="form-control" name="nome" > 
                         <br>          
-                        Posicao: <input type="text" name="posicao">
+                        Posicao: <input type="text" class="form-control" name="posicao">
                         <br>
-                        Time: <input type="text" name="time">
+                        Time: <input type="text" class="form-control" name="time">
                         <br>
-                        <input type="submit" value="Adicionar"> 
+                        <input type="submit"  class="btn btn-primary btn-block" value="Adicionar"> 
          </form>
-        
+            </div>
+        <div class="container">
         
          <h3>Lista de Jogadores</h3><br>
-                        <table border="1">
+                        <table class="table-responsive" border="1">
                         <tr>
                             
                             <td> Id </td> 
@@ -48,7 +50,8 @@
                         
                         
                         <% } %>
-                        </table>
+                      </table>
+                       </div> 
                       
     </div>
 </div>

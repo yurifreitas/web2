@@ -3,8 +3,9 @@
 <%@page import="Modelos.Jogador"%>
 
 <%@include file="./header.jsp" %>
+<div class="container">
                         <h3>Lista de Jogadores</h3><br>
-                        <table border="1">
+                        <table class="table-responsive"  border="1">
                         <tr>
                             
                             <td> Id </td> 
@@ -31,5 +32,7 @@
                         
                         <% } %>
                         </table>
-                        <a href="./time.jsp">Voltar Times</a>
+                        <BR>
+                        <a href="./time.jsp" class="btn btn-primary">Voltar para Times</a>
+                        </div>
                         <%@include file="./footer.jsp" %>

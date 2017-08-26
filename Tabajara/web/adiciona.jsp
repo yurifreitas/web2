@@ -1,3 +1,5 @@
+<%      String name = request.getParameter("nome");
+        session.setAttribute( "time", name); %>
 <%@page import="Persistencia.TMDAO"%>
 <%@page import="Modelos.Time"%>
 

@@ -2,7 +2,7 @@
 package Modelos;
 
 public class Time {
-     private int id;
+    private int id;
     private String nome;
 
     public Time() {

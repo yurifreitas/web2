@@ -8,9 +8,9 @@
         <%@include file="./header.jsp" %>
             <div class="container">
                 <div class="index">
-                    <ul>
-                        <li><a href="./time.jsp">Times</a></li>
-                        <li><a href="./jogador.jsp">Jogadores</a></li>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a  class="btn btn-primary" href="./time.jsp">Times</a></li>
+                        <li class="list-group-item"><a   class="btn btn-primary"href="./jogador.jsp">Jogadores</a></li>
                     </ul>
                     
                 </div>

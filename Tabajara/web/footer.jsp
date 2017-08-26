@@ -1,17 +1,50 @@
-<%-- 
-    Document   : rodape
-    Created on : 25/08/2017, 15:07:28
-    Author     : APLPoloNaval
---%>
 
-       <div class="container">
-            <div class="footer">
-                <h1>footer</h1>
+<footer>
+<script src="./js/jquery-3.2.1.js"></script>
+<script src="./js/bootstrap.js"></script>
+<link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 footerleft ">
+                <div class="logofooter"> Logo</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                <p><i class="fa fa-map-pin"></i>Brasil</p>
+                <p><i class="fa fa-phone"></i> Fone:(53)981065474</p>
+                <p><i class="fa fa-envelope"></i> E-mail : yuribzfreitas@furg.br</p>
+
             </div>
+            <div class="col-md-6 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">links</h6>
+                <ul class="footer-ul">
+                    <li><a href="index.jsp">Home</a></li>
+                    <li ><a href="./time.jsp">Adicionar Time</a></li>
+                    <li ><a href="./jogador.jsp">Adicionar jogador</a></li>
+                    <li ><a href="./listarjg.jsp">Lista de Jogadores</a></li>
+                </ul>
+            </div>
+           
+            
         </div>
-        
-         
-        <script src="./js/jquery-3.2.1.js"></script>
-        <script src="./js/bootstrap.js"></script>
+    </div>
+</footer>
+<!--footer start from here-->
+
+<div class="copyright">
+    <div class="container">
+        <div class="col-md-6">
+            <p>© 2017 todos os direitos reservados </p>
+        </div>
+        <div class="col-md-6">
+            <ul class="bottom_ul">
+                <li><a href="index.jsp">Home</a></li>
+                    <li ><a href="./time.jsp">Adicionar Time</a></li>
+                    <li ><a href="./jogador.jsp">Adicionar jogador</a></li>
+                    <li ><a href="./listarjg.jsp">Lista de Jogadores</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 </body>
 </html>

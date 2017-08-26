@@ -1,3 +1,5 @@
+<%      String name = request.getParameter("nome");
+        session.setAttribute( "jogador", name); %>
 <%@page import="Persistencia.JGDAO"%>
 <%@page import="Modelos.Jogador"%>
 

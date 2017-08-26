@@ -5,21 +5,27 @@
 <%@page import="Modelos.Time"%>
 <%@include file="./header.jsp" %>
 <% Jogador jogador = new JGDAO().selecionarJogador(Integer.parseInt(request.getParameter("id"))); %>
-                        <form action="./alterajg.jsp" method="post">
-                            Nome: <input type="text" name="nome" value="<%=jogador.getNome()%>"> 
+                        
+<div class="container">
+<form action="./alterajg.jsp" method="post">
+                            Nome: <input type="text" class="form-control" name="nome" value="<%=jogador.getNome()%>"> 
                             <br>
-                            Posicao: <input type="text" name="posicao" value="<%=jogador.getPosicao()%>"
+                            Posicao: <input type="text" class="form-control" name="posicao" value="<%=jogador.getPosicao()%>"
                             <br>
-                            Time: <input type="text" name="time" value="<%=jogador.getTime()%>"
+                            <br>
+                            Time: <input type="text" class="form-control" name="time" value="<%=jogador.getTime()%>"
                             <br>
                             <input type="hidden" name="id" value="<%=jogador.getId()%>">
+                            <br>
 
-                            <input type="submit" value="Alterar">           
+                            <input type="submit" class="btn btn-primary btn-block" value="Alterar">           
                          </form>
+                            </div>
+                            <div class="container">
                             
                             <hr>
                         <h3>Lista de Times</h3><br>
-                        <table border="1">
+                        <table class="table-responsive"  border="1">
                         <tr>
                             
                             <td> Id </td> 
@@ -43,6 +49,7 @@
                         
                         <% } %>
                         </table>
+                            </div>
                         
                         <%@include file="./footer.jsp" %>
                         

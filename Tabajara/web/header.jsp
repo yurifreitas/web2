@@ -17,9 +17,18 @@
         <link href="./css/estilo.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <div class="header">
-                <h1>header</h1>
-            </div>
-        </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.jsp">Tabajara</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.jsp">Home</a></li>
+                    <li ><a href="./time.jsp">Adicionar Time</a></li>
+                    <li ><a href="./jogador.jsp">Adicionar jogador</a></li>
+                    <li ><a href="./listarjg.jsp">Lista de Jogadores</a></li>
+                    
+                </ul>
 
+            </div>
+        </nav>
